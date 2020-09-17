@@ -9,20 +9,19 @@ declare(strict_types=1);
 
 class Beverage{
 
-  define("barname", "Het Vervolg");
-
     private $temperature;
     private $color;
     private $price;
 
-    private static $timesServed = 0;
+    private static int $timesServed = 0;
 
     public function __construct(
         string $color,
         float $price,
-        string $temperature = "cold"
-        this->timeServed = timeServed;
+        string $temperature = "cold",
+        self::$timesServed++;
     )
+
     {
         $this->temperature = $temperature;
         $this->color = $color;
