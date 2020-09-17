@@ -4,28 +4,27 @@ declare(strict_types=1);
 define("barname", "Het Vervolg");
 echo GREETING;
 
-
 class Beverage
 {
-private $temperature;
-private $color;
-private $price;
+    private $temperature;
+    private $color;
+    private $price;
 
-public function __construct(
-string $color,
-float $price,
-string $temperature = "cold"
-)
-{
-$this->temperature = $temperature;
-$this->color = $color;
-$this->price = $price;
-}
+    public function __construct(
+        string $color,
+        float $price,
+        string $temperature = "cold"
+    )
+    {
+        $this->temperature = $temperature;
+        $this->color = $color;
+        $this->price = $price;
+    }
 
-public function getInfo(): string
-{
-return "This beverage is " . $this->color . " and " . $this->price . ".";
-}
+    public function getInfo(): string
+    {
+        return "This beverage is " . $this->color . " and " . $this->price . ".";
+    }
 
 }
 
