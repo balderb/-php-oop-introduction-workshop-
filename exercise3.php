@@ -13,9 +13,10 @@
 
 class Beverage
 {
+    // setting all used variables to "private"
     private $temperature;
     private $color;
-    private price;
+    private $price;
 
     public function __construct(string $color, float $price, string $temperature = "cold")
     {
@@ -65,9 +66,7 @@ class Beer extends Beverage
     {
         return $this->beerInfo();
     }
-
 }
-
 
 $duvel = new Beer('Duvel', 8.5, 'blond', 3.5);
 echo $duvel->getAlcoholpercentage() . "<br>";
@@ -77,10 +76,4 @@ echo $duvel->getInfo() . "<br>";
 $duvel->setColor('light');
 echo $duvel->getColor() . "<br>";
 echo $duvel->getBeerInfo() . "<br>";
-
-
-
-
-
-
 
