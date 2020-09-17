@@ -1,4 +1,5 @@
 <?php
+<declare(strict_types=1);
 
 // Oefening 4 (first attempt)
 
@@ -15,13 +16,13 @@ float $price,
 string $temperature = "cold",
 float $alcoholpercentage,
 string $name
-);
+)
 
 // Foresee a construct with previous properties
 // + sets values for name and alcoholpercentage (with the '=' symbol).
 
 {
-    parent::__construct($color, $price, $temperature);
+    parent::__construct($color, $price, $temperature)
 }
 
 $this->name = $name;

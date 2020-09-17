@@ -42,7 +42,6 @@ class Beverage
     }
 }
 
-
 // create a new beer class, initiated from Beverage + 2 variables
 
 class Beer extends Beverage
