@@ -1,19 +1,27 @@
 <?php
 declare(strict_types=1);
 
-define("barname", "Het Vervolg");
-echo GREETING;
+// Copy your solution from exercise 6
+// Make a static property in the Beverage class that can only be accessed from inside the class called timesServed, an integer with default value 0.
+// Every time a new Beverage is created add 1 to timesServed. You will need to alter the constructor for this.
+// Create a number of Objects based in your favorite beverages!
+// At the last line of your script, display the times a drink was served.
 
-class Beverage
-{
+class Beverage{
+
+  define("barname", "Het Vervolg");
+
     private $temperature;
     private $color;
     private $price;
+
+    private static $timesServed = 0;
 
     public function __construct(
         string $color,
         float $price,
         string $temperature = "cold"
+        this->timeServed = timeServed;
     )
     {
         $this->temperature = $temperature;
