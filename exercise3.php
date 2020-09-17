@@ -18,6 +18,7 @@ class Beverage
     private $color;
     private $price;
 
+    // Create construct and pass the variables + initiate 3 new vars
     public function __construct(string $color, float $price, string $temperature = "cold")
     {
         $this->temperature = $temperature;
@@ -41,9 +42,13 @@ class Beverage
     }
 }
 
+
+// create a new beer class, initiated from Beverage + 2 variables
+
 class Beer extends Beverage
 {
-    private $name, $alcoholpercentage;
+    private $name;
+    private $alcoholpercentage;
 
     public function __construct(string $name, float $alcoholpercentage, string $color, float $price, string $temperature = "cold")
     {
@@ -57,9 +62,10 @@ class Beer extends Beverage
         return $this->alcoholpercentage;
     }
 
+    // create beerInfo method
     private function beerInfo(): string
     {
-        return "Hi i'm " . $this->name . " and have an alochol percentage of " . $this->alcoholpercentage . " and I have a " . $this->getColor() . " color.";
+        return "Hi, i'm " . $this->name . " and have an alochol percentage of " . $this->alcoholpercentage . " and I have a " . $this->getColor();
     }
 
     public function getBeerInfo(): string
