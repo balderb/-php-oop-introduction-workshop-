@@ -5,8 +5,8 @@
 class Beer extends Beverage {
 
 // add two more variables to the extended class Beer
-public string $name;
-public float $alcoholpercentage;
+protected string $name;
+protected float $alcoholpercentage;
 
 // create a construct with the two extended (and public) variables (not sure about semicolons at the end)
 public function __construct(
@@ -18,13 +18,11 @@ string $name
 );
 
 // Foresee a construct with previous properties
-//// + sets values for name and alcoholpercentage (with the '=' symbol).
+// + sets values for name and alcoholpercentage (with the '=' symbol).
+
 {
-parent::__construct(
-$color,
-$price,
-$temperature
-);
+    parent::__construct($color, $price, $temperature);
+}
 
 $this->name = $name;
 $this->alcoholpercentage = $alcoholpercentage;
