@@ -52,8 +52,6 @@ echo $cola->getInfo() . PHP_EOL;
 
 
 
-
-
 // Oefening 2 (first attempt)
 
 class Beer extends Beverage {
@@ -89,13 +87,22 @@ class Beer extends Beverage {
         return $this->alcoholpercentage;
     }
 
-    $duvel = new Beer(
+$duvel = new Beer('Duvel', 8.5, 'blond', 3.5);
+echo $duvel->getAlcoholpercentage() . "<br>";
+echo $duvel->alcoholpercentage . "<br>";
+echo $duvel->color . "<br>";
+echo $duvel->getInfo() . "<br>";
 
-)
+$cola = new Beverage('black', 2);
+echo $cola->getAlcoholpercentage();
+
+
+// Oefening 3 (first attempt)
+// making the variables private and adding "getters" and "setters"
 
 
 
-
+//
 
 
 
