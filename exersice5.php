@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-define("barname", "barname");
+define("barname", "Het Vervolg");
 echo GREETING;
 
 class Beverage
