@@ -7,6 +7,7 @@ declare(strict_types=1);
 // Create a number of Objects based in your favorite beverages!
 // At the last line of your script, display the times a drink was served.
 
+
 class Beverage{
 
     private $temperature;
@@ -19,7 +20,7 @@ class Beverage{
         string $color,
         float $price,
         string $temperature = "cold",
-        self::$timesServed++;
+        ++self::$timesServed;
     )
 
     {
